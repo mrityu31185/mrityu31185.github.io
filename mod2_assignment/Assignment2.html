@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<style>
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+
+h1{
+	text-align: center;
+	font-weight: bold;
+}
+p{
+  margin:10px;
+  color: #000000;
+  padding: 20px 0px 0px 0px;
+  }
+.mb1, .mb2, .mb3{
+	border: 1	px solid black;
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	float: right;
+	position: relative;
+	background-color: magenta;
+	color: #000000;
+	font-weight: bold;
+}
+.mb1{
+	color: #fff;
+	
+}
+.mb2{
+	background-color: blue;
+	color: #fff;
+}
+
+.mb3{
+	background-color: yellow;
+	color: #000000;
+}
+.row {
+	width: 100%;
+
+}
+
+.col-lg-4{
+	position: relative;
+	border: 1px solid #000000;
+	background-color: #ccc;
+}
+@media only screen and (max-width: 767px){
+
+	h1{
+		margin-top: 30px;
+	}
+	.row{
+		justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+		margin-top: 30px;
+	}
+	.col-lg-4{
+		margin: 11px 11px 11px;
+		width: 95.5%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+	h1{
+		margin-top:10%;
+	}
+.row{
+	margin-top:10%;
+	padding-left: 10px;
+}
+	.fb, .sb {
+		margin-left: 10px;
+		margin-bottom: 10px;
+		float:left;
+	}
+
+.col-lg-4{
+	width:47.9%;
+}
+.tb{
+	margin-left: 10.6px;
+	clear:left;
+	width:97%;
+}
+.col-sm-12 p{
+	
+}
+
+}
+@media only screen and (min-width: 992px){
+
+	h1{
+		margin-top: 50px;
+	}
+	
+	.fb, .sb, .tb {
+		
+		float:left;
+		
+	}
+	.col-lg-4{
+		width: 30.7%;
+		margin:10px;
+	}
+
+.row{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	padding: 4% 8%;
+	margin-top: 100px;
+}
+
+}
+
+	</style>
+<body>
+	<h1>Our Menu</h1>
+	<div class="row">
+		<div class="col-lg-4 fb">
+			<div class="mb1">Vegetarians</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+		<div class="col-lg-4 sb">
+			<div class="mb2">Non-Veg</div>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+		<div class="col-lg-4 tb">
+			<div class="mb3">Eggitarians</div>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+	</div>
+	
+</body>
+</html> 
